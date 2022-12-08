@@ -1,10 +1,8 @@
 const getData = require("../index.js");
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+
 function renderLicenseBadge(data) {
   const liBadgeType = data.license;
-  console.log(liBadgeType)
   let badgeLink = ""
 
   switch (liBadgeType) {
@@ -26,8 +24,7 @@ function renderLicenseBadge(data) {
   return badgeLink
  }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+
 function renderLicenseLink(data) { 
   const liType = data.license;
   let liLink = ""
@@ -50,8 +47,7 @@ function renderLicenseLink(data) {
   return liLink
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+
 function renderLicenseSection(data) {
   let renderLiSec = ""
   if (data.license === "") {
@@ -68,7 +64,7 @@ ${renderLicenseLink(data)}
   }
  }
 
-// TODO: Create a function to generate markdown for README
+
 const generateMarkdown = (data) =>
 `# ${data.title}
 
