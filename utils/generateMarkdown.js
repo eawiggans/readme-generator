@@ -1,55 +1,98 @@
+const getData = require("../index.js");
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) { }
+function renderLicenseBadge(data) {
+  const liBadgeType = data.license;
+  console.log(liBadgeType)
+  let string = ""
+
+  switch (liBadgeType) {
+    case "MIT License" : 
+    string = "https://img.shields.io/badge/license-MIT-brightgreen" ;
+    break;
+    case "GNU General Pulic License v3.0" : 
+    string = "https://img.shields.io/badge/license-GNU-brightgreen";
+    break;
+    case "Apache License v2.0" : 
+    string = "https://img.shields.io/badge/license-Apache_2.0-brightgreen";
+    break;
+    case "No license" : 
+    string = "";
+    break;
+    default : "" ;
+  }
+  return string
+ }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) { }
+function renderLicenseLink(license) { 
+  const liType = data.license;
+  switch (liType) {
+    case "MIT License" : 
+    "https://spdx.org/licenses/MIT.html" ;
+    break;
+    case "GNU General Pulic License v3.0" : 
+    "https://spdx.org/licenses/GPL-3.0-or-later.html";
+    break;
+    case "Apache License v2.0" : 
+    "https://spdx.org/licenses/Apache-2.0.html";
+    break;
+    default : "" ;
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) { }
+function renderLicenseSection(license) {
+  if (!data.license) {
+
+  }
+  else {
+
+  }
+ }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-  ## Description
+const generateMarkdown = (data) =>
+`# ${data.title}
 
-  ## Table of Contents
+${renderLicenseBadge(data)}
 
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Credits](#credits)
-  - [License](#license)
+## Description
+${data.description}
 
-  ## Installation
+## Table of Contents
 
-  ## Usage
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Tests](#tests)
+- [Questions](#questions)
 
+## Installation
+${data.installation}
 
-  To add a screenshot, create an `assets / images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+## Usage
+${data.usage}
 
-    ```md
-  ![alt text](assets / images / screenshot.png)
-    ```
+## Credits
+${data.credits}
 
-  ## Credits
+## License
 
-  ## License
-  ${renderLicenseSection()}
+## Tests
+${data.tests}
 
-  ## Badges
+## Questions
+If you have any questions, you can reach me [here](mailto:${data.email})
 
-  ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+You can view my GitHub profile and repositories [here](https://github.com/${data.github})
 
-  Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-  ## Features
-
-  ## How to Contribute
-
-  ## Tests
 `;
-}
 
-module.exports = generateMarkdown;
+module.exports = {
+  generateMarkdown
+};
