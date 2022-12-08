@@ -1,9 +1,10 @@
-# fd
+# Readme Generator
 
-https://img.shields.io/badge/license-MIT-brightgreen
+
+
 
 ## Description
-f
+Readme generator generate readme
 
 ## Table of Contents
 
@@ -15,21 +16,23 @@ f
 - [Questions](#questions)
 
 ## Installation
-f
+Generate
 
 ## Usage
-d
+Use
 
 ## Credits
-d
+dkfajsdjfkal
 
 ## License
 
+    
+
 ## Tests
-d
+kasjfld
 
 ## Questions
-If you have any questions, you can reach me [here](mailto:d)
+If you have any questions, you can reach me [here](mailto:slkfajd)
 
-You can view my GitHub profile and repositories [here](https://github.com/d)
+You can view my GitHub profile and repository [here](https://github.com/ksdfjdk)
 
