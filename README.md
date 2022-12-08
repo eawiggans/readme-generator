@@ -16,7 +16,9 @@ for which they must either type answers and press Enter, or Arrow Key up or down
 
 ![Screenshot of multiple choice prompt](./images/Screenshot_20221208_054008.png) 
 
-to select from a list of choices. Once they have answered all the prompts, their README file is generated in the "sample" folder, and they can open and view the finished product.
+to select from a list of choices. Once they have answered all the prompts, their README file is generated in the "sample" folder, and they can open and view the finished product. 
+
+A walkthrough video can be viewed [here.](https://drive.google.com/file/d/1w8f-LscFGFF1HKfLqTfRb9XFfuhVt5C8/view)
 
 ## Credits
 This was created using Node.js, Inquirer.js and the documentation for each.    
