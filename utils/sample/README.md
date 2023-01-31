@@ -1,10 +1,10 @@
-# Readme Generator
+# Book Search Engine
 
-![License Badge](https://img.shields.io/badge/license-MIT-brightgreen)
+
 
 
 ## Description
-This is an app that uses Node and Inquirer to allow users to generate a professional README guide using only the command line.
+Book lovers are always on the hunt for new books to read, but they also like to keep track of old favorites and recent reads. This book search engine allows users to search Google Books' API, view entries for books, and when logged in, save books to their own collection. It can be a wish list, a list of fond memories, books for friends--anything they like.
 
 ## Table of Contents
 
@@ -16,20 +16,20 @@ This is an app that uses Node and Inquirer to allow users to generate a professi
 - [Questions](#questions)
 
 ## Installation
-Users must have node installed, and install Inquirer when they first download the repo.
+Visit the url at https://whispering-lowlands-16908.herokuapp.com/
 
 ## Usage
-Open index.js file in the terminal and run by entering "node index.js". The terminal will then give the user a series of prompts for the user to answer, or choices to select.
+At the above link, users can search for books using the search bar. They can browse the search results. If they log in, however, they also get the option to save books to their own collection. They can view their saved books, and remove books from the list as well as add them.
 
 ## Credits
-Node.js and Inquirer.js.
+
 
 ## License
-This application is covered under the MIT License. See more info [here]("https://spdx.org/licenses/MIT.html")
+
     
 
 ## Tests
-No tests.
+
 
 ## Questions
 If you have any questions, you can reach me [here](mailto:ea.wiggans@gmail.com)
